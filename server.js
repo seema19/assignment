@@ -3,7 +3,7 @@ app     = express(),
 bodyParser=require('body-parser'),
 	mongoose=require('mongoose'),
 meetupsController=require('./server/controllers/meetups-controller');
-mongoose.connect('mongodb://localhost:27017/mean-demo');
+mongoose.connect('mongodb://seema19:mortein19@ds029960.mongolab.com:29960/assignment');
 app.use(bodyParser());
 app.get('/',function(req,res){
     res.sendFile(__dirname+'/client/views/index.html');
